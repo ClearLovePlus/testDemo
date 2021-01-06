@@ -12,6 +12,7 @@ public class TestController {
     @RequestMapping("hello")
     public String test(){
         Random random=new Random();
+
         boolean tag=random.nextBoolean();
         Number number=(tag||!tag)?new Integer(3):new Long(1);
         System.out.println(number);
